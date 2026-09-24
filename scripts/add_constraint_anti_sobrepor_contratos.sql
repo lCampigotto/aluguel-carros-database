@@ -1,6 +1,6 @@
 ALTER TABLE contratos
 ADD CONSTRAINT antiSobreporContratos
 EXCLUDE USING GIST (
-    idv WITH =,
+    id_veiculo WITH =,
     daterange(inicio, fim, '[]') WITH &&
 );

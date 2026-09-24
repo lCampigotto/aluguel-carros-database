@@ -6,5 +6,6 @@ CREATE TABLE IF NOT EXISTS cliente (
     endereco VARCHAR(8) NOT NULL,
     banco VARCHAR(50) NOT NULL,
     ag VARCHAR(4) NOT NULL,
-    conta VARCHAR(9) UNIQUE NOT NULL
+    conta VARCHAR(9) UNIQUE NOT NULL,
+    pontosGanhos NUMERIC(10,2) NOT NULL DEFAULT 0
 );
